@@ -11,19 +11,18 @@
     />
   </head>
   <body>
-      <h1>doog</h1>
     <table>
       {%for i in range(num1):%}
       <tr>
         {%for j in range(num2):%}
-        <td class="color1"></td>
-        <td class="color2"></td>
+        <td class="color1" style="--background-color: {{color1}}"></td>
+        <td class="color2" style="--background-color: {{color2}}"></td>
         {%endfor%}
       </tr>
       <tr>
         {%for j in range(num2):%}
-        <td class="color2"></td>
-        <td class="color1"></td>
+        <td class="color2" style="--background-color: {{color1}}"></td>
+        <td class="color1" style="--background-color: {{color2}}"></td>
         {%endfor%}
       </tr>
       {%endfor%}
