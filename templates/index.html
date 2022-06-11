@@ -9,6 +9,14 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style1.css')}}"
     />
+    <style>
+      .color1 {
+        background-color: var(--background-color);
+      }
+      .color2 {
+        background-color: var(--background-color);
+      }
+    </style>
   </head>
   <body>
     <table>
@@ -21,8 +29,8 @@
       </tr>
       <tr>
         {%for j in range(num2):%}
-        <td class="color2" style="--background-color: {{color1}}"></td>
-        <td class="color1" style="--background-color: {{color2}}"></td>
+        <td class="color2" style="--background-color: {{color2}}"></td>
+        <td class="color1" style="--background-color: {{color1}}"></td>
         {%endfor%}
       </tr>
       {%endfor%}

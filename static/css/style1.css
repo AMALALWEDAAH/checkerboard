@@ -3,11 +3,8 @@ table tr td {
   height: 50px;
 }
 .color1 {
-  background-color: var(--background-color);
+  background-color: black;
 }
 .color2 {
-  background-color: var(--background-color);
-}
-h1 {
-  color: aquamarine;
+  background-color:darkred;
 }

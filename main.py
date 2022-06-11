@@ -6,21 +6,21 @@ app = Flask(__name__)
 
 # The "@" decorator associates this route with the function immediately following
 @app.route('/')
-def hello_world(num1=8, num2=8, color1="brown", color2="red"):
+def hello_world(num1=4, num2=4, color1="black", color2="darkred"):
     # Return 8 by 8 checkerboard
     return render_template('index.html', num1=int(num1), num2=int(num2), color1=color1, color2=color2)
 
 
 # The "@" decorator associates this route with the function immediately following
 @app.route('/4')
-def four_times(num1=8, num2=4, color1="brown", color2="red"):
+def four_times(num1=4, num2=2, color1="black", color2="darkred"):
     # Return 8 by 4 checkerboard
     return render_template('index.html', num1=int(num1), num2=int(num2), color1=color1, color2=color2)
 
 
 # The "@" decorator associates this route with the function immediately following
 @app.route('/<num1>/<num2>')
-def costmized(num1, num2, color1="brown", color2="red"):
+def costmized(num1, num2, color1="black", color2="darkred"):
     # Return x by y checkerboard.
     return render_template('index.html', num1=int(num1), num2=int(num2), color1=color1, color2=color2)
 
